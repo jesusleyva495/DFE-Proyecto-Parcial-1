@@ -1,0 +1,211 @@
+#PALETA_DE_COLORES {
+  color: #120907 #122a40 #145f87 #209ed8 #20dbd8;
+}
+
+/* #region Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #120907;
+  color: #fff;
+}
+
+header {
+  background-color: #120907;
+  color: #fff;
+  text-align: right;
+  padding: 20px;
+}
+
+#perfil img {
+  display: flex;
+  float: left;
+  margin-left: 50px;
+  width: 120px;
+  height: 120px;
+  overflow: auto;
+  border-radius: 100px;
+}
+
+#nombre h1,
+p {
+  margin-right: 50px;
+}
+
+nav ul {
+  font-size: large;
+  list-style: none;
+  padding: 30px;
+  text-align: center;
+  background-color: #122a40;
+  box-shadow: 0.2em 1em 2em #145f87, inset 0 0 0 transparent,
+    inset 0 0 0 transparent;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilos de secciones */
+section {
+  padding: 20px;
+}
+
+/* Estilos de contacto */
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* #endregion */
+
+/* #region Sobre mi */
+
+#sobre-mi {
+  background-color: hsl(209, 56%, 6%);
+  text-align: center;
+}
+
+#sobre-mi h2{
+    font-size: 40px;
+}
+
+#sobre-mi p{
+    font-size: 20px;
+    
+}
+
+/* #endregion */
+
+/* #region Habilidades */
+
+.habilidades-container{
+    background-color: #122a40;
+    padding: 20px;
+}
+
+.habilidades-container h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Estilos para las barras de progreso */
+.progress-bar {
+    height: 15px;
+}
+
+/* Establece la anchura de la barra de progreso usando data-progress */
+.progress-bar::before {
+    content: '';
+    width: attr(data-progress) '%'; /* Utiliza el atributo data-progress para definir la anchura */
+    height: 100%;
+    background-color: #209ed8;
+    display: block;
+}
+
+
+/* #endregion */
+
+/* #region FORMULARIO Y REDES SOCIALES */
+
+footer {
+  justify-content: center;
+  text-align: center;
+  background-color: #122a40;
+  color: #fff;
+  padding: 10px;
+}
+
+#footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-align: center;
+  width: 300px;
+  color: #fff;
+}
+
+.RedesSociales {
+  text-align: center;
+  margin-left: 2rem;
+  margin-bottom: auto;
+  color: #fff;
+}
+
+.RedesSociales a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: #209ed8;
+  margin: 0 15px 10px 0;
+  margin-top: 4rem;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+.RedesSociales a:hover {
+  color: #209ed8;
+  background-color: white;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: transparent;
+  padding: 15px;
+  outline: #145f87;
+  border: 2px solid #209ed8;
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+::placeholder {
+  color: #209ed8;
+}
+
+.btn-Enviar-Formulario {
+  background-color: #209ed8;
+  color: white;
+  border: 0;
+}
+
+.btn-Enviar-Formulario:hover {
+  color: #209ed8;
+  background-color: white;
+  cursor: pointer;
+}
+
+.copyright h4 {
+  text-align: center;
+}
+
+/* #endregion */

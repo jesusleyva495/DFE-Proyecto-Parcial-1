@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="perfil">
+        <img src="./img/perfil.jpg" alt="perfil" />
+      </div>
+
+      <div id="nombre">
+        <h1>Jesús Alberto Leyva Rodríguez</h1>
+        <p>Desarrollador Web</p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#footer-container">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <section id="sobre-mi">
+      <h2><i>Sobre Mí</i></h2>
+      <p>
+        ¡Hola! Soy Jesus Alberto, un apasionado de la programación con 1 año de
+        experiencia en el desarrollo de backend. A lo largo de mi carrera, he
+        tenido el privilegio de trabajar para proyecto emocionantes como una
+        bitacora para una empresa de construcción llamada EDALMARC, donde pude
+        desarrollar mis habilidades en express, mongodb y JavaScript. Mi enfoque
+        se centra en tener un conocimiento avanzado del stack MERN. Explora mi
+        portafolio para conocer más sobre mi trabajo y no dudes en ponerte en
+        contacto si tienes alguna pregunta o proyecto en mente.
+      </p>
+    </section>
+
+    <section id="habilidades">
+      <div class="habilidades-container">
+        <h2>Habilidades</h2>
+        <div class="skill">
+          <p>HTML5</p>
+          <div class="progress-bar" data-progress="50"></div>
+        </div>
+        <div class="skill">
+          <p>CSS3</p>
+          <div class="progress-bar" data-progress="50"></div>
+        </div>
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="progress-bar" data-progress="75"></div>
+        </div>
+        <div class="skill">
+          <p>Express</p>
+          <div class="progress-bar" data-progress="75"></div>
+        </div>
+        <div class="skill">
+          <p>MongoDB</p>
+          <div class="progress-bar" data-progress="60"></div>
+        </div>
+      </div>
+    </section>
+    <section id="experiencia">
+      <h2>Experiencia Laboral</h2>
+      <p>Desarrollo de bitacora para una empresa de construcción</p>
+      <p>
+        Constancia de curso de ciberseguridad basico
+        <a
+          href="https://www.industrial.uson.mx/cursos/2022/curso_cs2022_jalr.pdf"
+          target="_blank"
+          >constancia</a
+        >
+      </p>
+      <p>
+        Constancia de curso de configuracion y administración de servidores con
+        windows
+        <a
+          href="https://www.industrial.uson.mx/cursos/2023/curso_cyads2023_jalr.pdf"
+          target="_blank"
+          >constancia</a
+        >
+      </p>
+      <p></p>
+    </section>
+
+    <footer>
+      <div id="footer-container">
+        <div class="link">
+          <h1>Formulario de contactos</h1>
+          <form>
+            <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Apellido" />
+            <input type="email" placeholder="Correo" />
+            <input class="btn-Enviar-Formulario" type="submit" value="Enviar" />
+          </form>
+        </div>
+
+        <div class="RedesSociales">
+          <h1>Redes sociales</h1>
+          <a href="https://www.facebook.com/jesus.leyva.395454" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/jesusleyva066" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a
+            href="https://www.linkedin.com/in/jesus-leyva-a6b4b9167/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <h4>&copy; 2023 Jesús Leyva (portafolio)</h4>
+    </div>
+  </body>
+</html>
