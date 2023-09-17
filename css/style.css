@@ -43,15 +43,28 @@ nav ul {
     inset 0 0 0 transparent;
 }
 
-nav li {
+.nav-links li {
   display: inline;
   margin-right: 20px;
+  padding: 1rem 2rem;
 }
 
-nav a {
+.nav-links a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+.nav-links li:hover {
+  background-color: #145f87;
+  border-radius: 10px;
+  transition: 500ms ease;
+}
+
+.hamburguer {
+  font-size: 30px;
+  padding-left: 50%;
+  display: none;
 }
 
 /* Estilos de secciones */
@@ -74,52 +87,126 @@ ul li {
   text-align: center;
 }
 
-#sobre-mi h2{
-    font-size: 40px;
+#sobre-mi h2 {
+  font-size: 40px;
 }
 
-#sobre-mi p{
-    font-size: 20px;
-    
+#sobre-mi p {
+  font-size: 20px;
 }
 
 /* #endregion */
 
 /* #region Habilidades */
 
-.habilidades-container{
-    background-color: #122a40;
-    padding: 20px;
+.habilidades-container {
+  background-color: #122a40;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.habilidades-container h2{
-    text-align: center;
-    font-size: 40px;
+.habilidades-container h2 {
+  text-align: center;
+  font-size: 40px;
 }
 
 .skill {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .skill p {
-    margin: 0;
-    font-weight: bold;
+  margin: 0;
+  font-weight: bold;
+}
+
+.html-logo,
+.css-logo {
+  display: flex;
+  margin-top: -40px;
+  margin-left: 60px;
+  width: 50px;
+  height: 50px;
+}
+
+.js-logo {
+  padding: 5px 0 5px;
+  display: flex;
+  margin-top: -40px;
+  margin-left: 90px;
+  width: 45px;
+  height: 45px;
+}
+
+.mongodb-logo {
+  display: flex;
+  margin-top: -40px;
+  margin-left: 90px;
+  width: 100px;
+  height: 50px;
 }
 
 /* Estilos para las barras de progreso */
 .progress-bar {
-    height: 15px;
+  height: 15px;
 }
 
 /* Establece la anchura de la barra de progreso usando data-progress */
 .progress-bar::before {
-    content: '';
-    width: attr(data-progress) '%'; /* Utiliza el atributo data-progress para definir la anchura */
-    height: 100%;
-    background-color: #209ed8;
-    display: block;
+  content: "";
+  width: attr(data-progress) "%"; /* Utiliza el atributo data-progress para definir la anchura */
+  height: 100%;
+  background-color: #209ed8;
+  display: block;
 }
 
+/* #endregion */
+
+/* #region Experiencia */
+
+#experiencia-laboral {
+  background-color: hsl(209, 56%, 10%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1em 1em 2em #145f87, -1em -1em 2em #145f87,
+    inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+#experiencia-laboral h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.edalmarc-logo {
+  float: right;
+  padding-right: 20px;
+  margin-top: -120px;
+  width: 20%;
+}
+
+.ciberseguridad-logo,
+.servidor-logo {
+  float: right;
+  padding-right: 20px;
+  margin-top: -160px;
+  width: 15%;
+}
+
+.experiencia-item {
+  background-color: #122a40;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.puesto {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.periodo {
+  color: #ccc;
+}
 
 /* #endregion */
 
@@ -209,3 +296,55 @@ input {
 }
 
 /* #endregion */
+
+@media screen and (max-width: 1024px) {
+  #sobre-mi h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #sobre-mi p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 783px) {
+  #nombre h1,
+  p {
+    font-size: 25px;
+  }
+  #sobre-mi h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #sobre-mi p {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    position: inherit;
+    top: 90px;
+    left: 0;
+    background-color: #122a40;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .nav-links.show {
+    display: flex;
+    margin: 0;
+    background-color: hsl(209, 56%, 14%);
+    text-align: center;
+  }
+
+  .hamburguer {
+    background-color: #122a40;
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+}

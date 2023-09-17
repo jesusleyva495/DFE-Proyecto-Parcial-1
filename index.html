@@ -26,8 +26,10 @@
         <p>Desarrollador Web</p>
       </div>
     </header>
+
     <nav>
-      <ul>
+      <div class="hamburguer">&#9776;</div>
+      <ul class="nav-links">
         <li><a href="#sobre-mi">Sobre Mí</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
@@ -51,50 +53,94 @@
 
     <section id="habilidades">
       <div class="habilidades-container">
-        <h2>Habilidades</h2>
+        <h2><i>Habilidades</i></h2>
         <div class="skill">
-          <p>HTML5</p>
+          <p>
+            HTML5
+            <img src="./img/html-logo.png" alt="html-logo" class="html-logo" />
+          </p>
           <div class="progress-bar" data-progress="50"></div>
         </div>
         <div class="skill">
-          <p>CSS3</p>
+          <p>
+            CSS3
+            <img src="./img/css-logo.png" alt="css-logo" class="css-logo" />
+          </p>
           <div class="progress-bar" data-progress="50"></div>
         </div>
         <div class="skill">
-          <p>JavaScript</p>
+          <p>
+            JavaScript
+            <img
+              src="./img/javascript-logo.png"
+              alt="JavaScript"
+              class="js-logo"
+            />
+          </p>
           <div class="progress-bar" data-progress="75"></div>
         </div>
         <div class="skill">
-          <p>Express</p>
-          <div class="progress-bar" data-progress="75"></div>
-        </div>
-        <div class="skill">
-          <p>MongoDB</p>
+          <p>
+            MongoDB
+            <img
+              src="./img/mongodb-logo.png"
+              alt="MongoDB"
+              class="mongodb-logo"
+            />
+          </p>
           <div class="progress-bar" data-progress="60"></div>
         </div>
       </div>
     </section>
+
     <section id="experiencia">
-      <h2>Experiencia Laboral</h2>
-      <p>Desarrollo de bitacora para una empresa de construcción</p>
-      <p>
-        Constancia de curso de ciberseguridad basico
-        <a
-          href="https://www.industrial.uson.mx/cursos/2022/curso_cs2022_jalr.pdf"
-          target="_blank"
-          >constancia</a
-        >
-      </p>
-      <p>
-        Constancia de curso de configuracion y administración de servidores con
-        windows
-        <a
-          href="https://www.industrial.uson.mx/cursos/2023/curso_cyads2023_jalr.pdf"
-          target="_blank"
-          >constancia</a
-        >
-      </p>
-      <p></p>
+      <div id="experiencia-laboral">
+        <h2><i>Experiencia Laboral</i></h2>
+        <div class="experiencia-item">
+          <h3>EDALMARC, SAS</h3>
+          <p class="puesto">Desarrollador Back End</p>
+          <p class="periodo">Octubre 2023 - Septiembre 2023</p>
+          <p>
+            Hacer el backend de una bitacora que consiste en visualizar los
+            reportes hechos por los trabajadores
+          </p>
+          <img
+            src="./img/edalmarc-logo.png"
+            alt="edalmarc-logo"
+            class="edalmarc-logo"
+          />
+        </div>
+
+        <div class="experiencia-item">
+          <h3>Curso ciberseguridad</h3>
+          <p class="puesto">Aprendiz</p>
+          <p class="periodo">Octubre 2022 - Noviembre 2022</p>
+          <p>
+            Conocer los principios de la ciberseguridad como su aplicacion en el
+            mundo de una manera etica
+          </p>
+          <img
+            src="./img/ciberseguridad-logo.jpg"
+            alt="ciberseguridad-logo"
+            class="ciberseguridad-logo"
+          />
+        </div>
+
+        <div class="experiencia-item">
+          <h3>Curso Administracion de servidores con Windows</h3>
+          <p class="puesto">Aprendiz</p>
+          <p class="periodo">Junio 2023 - Julio 2023</p>
+          <p>
+            Administrar servidores con windows, la creacion de servidores Active
+            Directory y tener control de los usuarios de manera local
+          </p>
+          <img
+            src="./img/servidor-logo.jpg"
+            alt="servidor-logo"
+            class="servidor-logo"
+          />
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -117,7 +163,9 @@
           <a href="https://twitter.com/jesusleyva066" target="_blank"
             ><i class="fa-brands fa-x-twitter"></i
           ></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/jesus_495/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
           <a
             href="https://www.linkedin.com/in/jesus-leyva-a6b4b9167/"
             target="_blank"
