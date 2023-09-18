@@ -180,27 +180,32 @@ ul li {
   font-size: 40px;
 }
 
-.edalmarc-logo {
-  float: right;
-  padding-right: 20px;
-  margin-top: -120px;
-  width: 20%;
-}
-
-.ciberseguridad-logo,
-.servidor-logo {
-  float: right;
-  padding-right: 20px;
-  margin-top: -160px;
-  width: 15%;
-}
-
 .experiencia-item {
+  display: flex;
+  align-items: center;
   background-color: #122a40;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia-imagen {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  margin-left: 300px;
+  background-color: #122a40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.experiencia-imagen img {
+  max-width: 120%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .puesto {
@@ -210,6 +215,36 @@ ul li {
 
 .periodo {
   color: #ccc;
+}
+
+button.btn,
+a.button-link {
+  cursor: pointer;
+
+  background-color: #145f87;
+  color: #ffffff;
+  font-size: 1.2rem;
+
+  width: 30%;
+  height: 42px;
+  padding: 0 2rem;
+
+  border: none;
+
+  border-radius: 21px;
+  transition: color 0.5s;
+}
+
+a.button-link {
+  display: inline;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+button.btn:hover,
+a.button-link:hover {
+  background-color: #209ed8;
 }
 
 /* #endregion */
@@ -333,7 +368,6 @@ input {
 
 /* #endregion */
 
-
 @media screen and (max-width: 1024px) {
   #sobre-mi h2 {
     text-align: center;
@@ -348,15 +382,20 @@ input {
 @media screen and (max-width: 784px) {
   #nombre h1,
   p {
-    font-size: 25px;
+    font-size: 20px;
   }
   #sobre-mi h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
   }
 
   #sobre-mi p {
-    font-size: 20px;
+    font-size: 15px;
+  }
+
+  .habilidades-container h2 {
+    text-align: center;
+    font-size: 30px;
   }
 
   .modal {
@@ -407,5 +446,102 @@ input {
     display: block;
     color: white;
     cursor: pointer;
+  }
+
+  .html-logo,
+  .css-logo {
+    display: flex;
+    margin-top: -40px;
+    margin-left: 75px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .js-logo {
+    padding: 5px 0 5px;
+    display: flex;
+    margin-top: -40px;
+    margin-left: 115px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .mongodb-logo {
+    display: flex;
+    margin-top: -40px;
+    margin-left: 100px;
+    width: 100px;
+    height: 50px;
+  }
+
+  #experiencia-laboral h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .experiencia-item {
+    display: flex;
+    align-items: center;
+    background-color: #122a40;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .experiencia-imagen {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    background-color: #122a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .experiencia-imagen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .experiencia-item h3 {
+    font-size: 20px;
+  }
+
+  .experiencia-item p {
+    font-size: 15px;
+  }
+
+  button.btn,
+  a.button-link {
+    cursor: pointer;
+
+    background-color: #145f87;
+    color: #ffffff;
+    font-size: 1.1rem;
+
+    width: 80%;
+    height: 42px;
+    padding: 0 2rem;
+
+    border: none;
+
+    border-radius: 21px;
+    transition: color 0.5s;
+  }
+
+  a.button-link {
+    display: inline;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  button.btn:hover,
+  a.button-link:hover {
+    background-color: #209ed8;
   }
 }
