@@ -28,14 +28,20 @@
     </header>
 
     <nav>
-      <div class="hamburguer">&#9776;</div>
-      <ul class="nav-links">
-        <li><a href="#sobre-mi">Sobre Mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#footer-container">Contacto</a></li>
-      </ul>
+      <div class="hamburguer" id="openModalBtn">&#9776;</div>
     </nav>
+
+    <div id="navModal" class="modal">
+      <div class="modalContent">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <ul class="nav-links">
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#footer-container">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
 
     <section id="sobre-mi">
       <h2><i>Sobre Mí</i></h2>
@@ -174,6 +180,13 @@
         </div>
       </div>
     </footer>
+
+    <button id="btn-ir-arriba">
+      <svg viewBox="0 0 24 24">
+        <path d="m4 16 8-8 8 8"></path>
+      </svg>
+    </button>
+
     <div class="copyright">
       <h4>&copy; 2023 Jesús Leyva (portafolio)</h4>
     </div>
