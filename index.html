@@ -171,10 +171,11 @@
       <div id="footer-container">
         <div class="link">
           <h1>Formulario de contactos</h1>
-          <form>
-            <input type="text" placeholder="Nombre" />
-            <input type="text" placeholder="Apellido" />
-            <input type="email" placeholder="Correo" />
+          <form id="contacto-form">
+            <input type="text" id="name" placeholder="Nombre" required/>
+            <input type="text" id="apellido" placeholder="Apellido" required/>
+            <input type="email" id="email" placeholder="Correo" />
+            <textarea id="mensaje" placeholder="Mensaje" required></textarea>
             <input class="btn-Enviar-Formulario" type="submit" value="Enviar" />
           </form>
         </div>

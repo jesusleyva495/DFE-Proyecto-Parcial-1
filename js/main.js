@@ -7,19 +7,19 @@ $(document).ready(function () {
 
 // Configuracion para que el boton funcione
 const scrollToBottom = document.getElementById("btn-ir-arriba");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-      scrollToBottom.style.display = "block";
-    } else {
-      scrollToBottom.style.display = "none";
-    }
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollToBottom.style.display = "block";
+  } else {
+    scrollToBottom.style.display = "none";
+  }
+});
+scrollToBottom.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
-  scrollToBottom.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
+});
 
 // Variables y configuraciones del modal en alcance global
 const openModalBtn = document.getElementById("openModalBtn");
@@ -45,7 +45,7 @@ navLinks.addEventListener("click", (e) => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      if(shouldCloseModal){
+      if (shouldCloseModal) {
         closeModal();
       }
       targetElement.scrollIntoView({
@@ -67,7 +67,6 @@ function ejecutarCodigoEnBaseResolucion() {
     closeModal();
 
     shouldCloseModal = true;
-
   } else {
     // Elimina eventos para resoluciones mayores a 784px
     openModalBtn.removeEventListener("click", openModal);
@@ -90,3 +89,28 @@ window.addEventListener("load", ejecutarCodigoEnBaseResolucion);
 
 // Ejecutar la función cuando cambia el tamaño de la ventana
 window.addEventListener("resize", ejecutarCodigoEnBaseResolucion);
+
+// Recuperar datos del formulario
+  const contactoForm = document.getElementById("contacto-form");
+
+  contactoForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const nombre = document.getElementById("name").value;
+    const apellido = document.getElementById("apellido").value;
+    const email = document.getElementById("email").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    alert(
+      "Gracias por contactarnos - Nombre: " +
+        nombre +
+        "- Apellido: " +
+        apellido +
+        "- Email: " +
+        email +
+        "- Mensaje: " +
+        mensaje
+    );
+
+    contactoForm.reset();
+  });

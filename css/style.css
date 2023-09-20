@@ -314,6 +314,16 @@ input {
   color: white;
 }
 
+textarea {
+  background-color: transparent;
+  padding: 15px;
+  outline: #145f87;
+  border: 2px solid #209ed8;
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: white;
+}
+
 ::placeholder {
   color: #209ed8;
 }
@@ -544,4 +554,37 @@ input {
   a.button-link:hover {
     background-color: #209ed8;
   }
+}
+
+@media  screen and (max-width: 444px){
+  button.btn,
+  a.button-link {
+    cursor: pointer;
+
+    background-color: #145f87;
+    color: #ffffff;
+    font-size: 1.1rem;
+
+    width: 121%;
+    height: 35px;
+    padding: 0 2rem;
+
+    border: none;
+
+    border-radius: 21px;
+    transition: color 0.5s;
+  }
+
+  a.button-link {
+    display: inline;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  button.btn:hover,
+  a.button-link:hover {
+    background-color: #209ed8;
+  }
+  
 }
